@@ -18,7 +18,7 @@ list both the user's home directory and the /usr directory.
 
 ##### Options and arguments
 option | long option | description
------- |
+------ |:
 -a     | -all | List all files,even files that are hidden.
 -A | --almost all | Like the -a,except it does not list .(current directory) and ..(parent directory).
 -l | | display results in long format.
