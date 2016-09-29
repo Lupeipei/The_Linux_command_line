@@ -13,7 +13,7 @@ $ pwd
 $ ls
 $ ls -a
 ```
-More details about `ls` in the later chapters.
+More details about `ls` in the later [chapters](chapter_03.md).
 
 ### Changing the current working directory
 There are two kinds of pathnames,**absolute pathnames** and **relative pathnames**.
