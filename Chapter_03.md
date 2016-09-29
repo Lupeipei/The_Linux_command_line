@@ -17,8 +17,9 @@ $ ls ~ /usr
 list both the user's home directory and the /usr directory.
 
 ##### Options and arguments
+
 option | long option | description
------- | ------ | ------ 
+------ | ----------- | -----------
 -a     | -all | List all files,even files that are hidden.
 -A | --almost all | Like the -a,except it does not list .(current directory) and ..(parent directory).
 -l | | display results in long format.
@@ -39,7 +40,7 @@ $ less filename
 **less commands:**
 
 command | Action
-------- |
+------- | ------
 G | Move to the end of the file
 1G or g | Move to the beginning of the file
 n | search for the next occurrence of the previous search
