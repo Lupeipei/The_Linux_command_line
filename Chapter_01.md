@@ -29,10 +29,10 @@ $ cal
 $ df
 $ free
 ```
-`date`: display the current time and date.
-`cal`: display a calendar for current month.
-`df` : display the current amount of free space in your disk drives.
-`free` : display the free memory.
+* `date`: display the current time and date.
+* `cal`: display a calendar for current month.
+* `df` : display the current amount of free space in your disk drives.
+* `free` : display the free memory.
 
 ### Exiting a terminal
 ```
