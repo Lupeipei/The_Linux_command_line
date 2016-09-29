@@ -8,19 +8,19 @@ The shell is a program that takes keyboard commands and passes them to the opera
 
 ### Terminal emulators
 Access to the shell.
-* KDE(openSUSE) use *konsole*
-* GNOME(ubuntu,Centos) use *gnome-terminal*
+* KDE(OpenSUSE) use **konsole**
+* GNOME(Ubuntu,Centos) use **gnome-terminal**
 
 ### Command history
 Use *up-arrow* to get the previous command.
 Press *down-arrrow*,the previous command disappears.
 
-*Note:Most Linux distributions remember the last 1000 commands by default.*
+**Note : Most Linux distributions remember the last 1000 commands by default.**
 
 ### Cursor movement
 `ctrl-C` or `ctrl-V` is not worked for copying and pasting inside a terminal window.
 
-Note:setting the focus policy to "focus follows mouse" in the Configuration program for your window manager.
+**Note : Setting the focus policy to "focus follows mouse" in the Configuration program for your window manager.**
 
 ### Some simple commands
 ```
