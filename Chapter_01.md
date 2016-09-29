@@ -1,5 +1,5 @@
 # What is the shell?
-##### return to [Contents](README.md)
+#### return to [Contents](README.md)
 ### Concept
 The shell is a program that takes keyboard commands and passes them to the operating system to carry out.
 
@@ -39,10 +39,11 @@ $ free
 $ exit
 ```
 > The console behind the Curtain:
-Even if no terminal emulator running,several terminal sessions continue to run behind the graphical desktop,called virtual terminal or virtual consoles.
+
+>Even if no terminal emulator running,several terminal sessions continue to run behind the graphical desktop,called **virtual terminal** or **virtual consoles**.
 
 * `ctrl-alt-F1` through `ctrl-alt-F6` to access.
 * `alt-F1` through `ctrl-F6` to switch from one virtual terminal to another.
 * `alt-F7` to return to the graphical desktop.
 
-##### return to [Contents](README.md)
+#### return to [Contents](README.md)
