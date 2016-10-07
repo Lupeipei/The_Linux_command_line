@@ -49,3 +49,9 @@ $ less filename
 
 **Less is more:**
 Less was designed as an improved replacement of an earlier Unix program called *more*.
+
+### Symbolic Links
+It is a little like version control.you create a symbolic link pointing to a file,and when the file has a new version,you can create a new symbolic link pointing to it or delete the old one and create a new one.
+
+### Hard Links
+Symbolic Links and Hard links are two types of Links that allow files to have multiple names.
