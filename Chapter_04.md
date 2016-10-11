@@ -8,9 +8,8 @@ use  wildcards allows you to select filenames based on patterns of characters.
 | * | Matches any characters |
 | ? | Matches any single character |
 | [characters] | Matches any character that us a member of the set characters|
-| [!characters] | Matches any character that is not a member of the set
-characters |
-| [[:class:]] Matches any character that is a member of the specified class ||
+| [!characters] | Matches any character that is not a member of the set characters |
+| [[:class:]] | Matches any character that is a member of the specified class |
 
 Commonly Used character Classes:
 

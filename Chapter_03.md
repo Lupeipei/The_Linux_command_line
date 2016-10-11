@@ -48,7 +48,7 @@ $ less filename
 | q       | Quit less
 
 **Less is more :**
-
+Â
 Less was designed as an improved replacement of an earlier Unix program called *more*.
 
 ### Symbolic Links
