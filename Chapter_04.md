@@ -7,10 +7,9 @@ use  wildcards allows you to select filenames based on patterns of characters.
 | -------- | ------- |
 | * | Matches any characters |
 | ? | Matches any single character |
-| [characters] | Matches any character that us a member of the set characters|
-| [!characters] | Matches any character that is not a member of the set
-characters |
-| [[:class:]] Matches any character that is a member of the specified class ||
+| [characters] | Matches any character that us a member of the set characters |
+| [!characters] | Matches any character that is not a member of the set characters |
+| [[:class:]] | Matches any character that is a member of the specified class |
 
 Commonly Used character Classes:
 
@@ -84,6 +83,10 @@ here, item is either a file or a directory.
 
 #### Hard links
 **By default, every file has a single hard link that gives the file its name.** When we create a hard link, we create an additional directory entry for a file.
+
+- When thinking about hard links, it is helpful to imagine that files are made up of two parts: the data part containing the file's contents and the name part which holds the file's name. When we create hard links, we are actually creating additional name parts that all refer to the same data part. The system assigns a chain of disk blocks to what is called an **inode**, which is then associated with the name part. Each hard link therefore refers to a specific inode containing the file's contents.
+
+Use `ls -li`, you can see the inode of each file.
 
 Important limitations:
 
