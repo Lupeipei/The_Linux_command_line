@@ -91,20 +91,20 @@ To put more than one command on a line,  separate each command with a semicolon 
 command1; command2; command3...
 ```
 
-to create a alias:
+to create a alias :
 ```
 alias name='string'
 ```
-for example:
+for example :
 ```
 alias foo='cd; ls; cd -'
 ```
 
-to remove an alias:
+to remove an alias :
 ```
 unalias name
 ```
-to list all the aliases defined in the environment:
+to list all the aliases defined in the environment :
 ```
 alias
 ```
