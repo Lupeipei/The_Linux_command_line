@@ -25,7 +25,7 @@ list both the user's home directory and the /usr directory.
 | -l     |               | display results in long format.
 | -r     | --reverse     | display the results in reverse order.Normaally,ls displays its results in *ascending* alphabetical order.
 | -S     |               | sort results by file size.
-| -t     |               | sort by modification tme.
+| -t     |               | sort by modification time.
 
 ### Determining a file's type with file
 ```
