@@ -27,9 +27,11 @@ ls -l /usr/bin >> ls-log.txt
 + While we have referred to the first three of these file streams as standard input, output and error, the shell references them internally as file descriptors 0, 1 and 2, respectively.
 
 #### Redirecting Standard Error To One File
-    ```
-    ls -l /bin/usr 2> ls-error.txt
-    ```
+
+  ```
+  ls -l /bin/usr 2> ls-error.txt
+  ```
+  
 #### Redirecting Standard Output and Standard Error To One File
 + traditional way :
     ```
