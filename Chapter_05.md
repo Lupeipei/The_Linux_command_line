@@ -108,3 +108,6 @@ to list all the aliases defined in the environment :
 ```
 alias
 ```
+note:
+
+Defining aliases vanish when your shell session ends.
