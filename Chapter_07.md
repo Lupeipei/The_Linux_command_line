@@ -14,21 +14,18 @@ The shell expands the “\*” into something else (in this instance, the names 
 #### Pathname Expansion
 
 The mechanism by which wildcards work is called *pathname expansion*.
-
-    ```
-    echo D*
-    output: Desktop Documents
-
-    echo *s
-    output: Documents Pictures Templates Videos
-
-    ```
+```
+echo D*
+output: Desktop Documents
+echo *s
+output: Documents Pictures Templates Videos
+```
 
 Note:`echo *` does not reveal hidden files.
 To show hidden files :
-    ```
-    echo .[!.]*
-    ```
+```
+echo .[!.]*
+```
 
 #### Tilde Expansion(~)
 
