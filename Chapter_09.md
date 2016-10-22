@@ -37,8 +37,7 @@ The **first ten characters** of the listing are the **file attributes**. The fir
 | --------- | --------- |
 | - | A regular file.|
 | d | A directory.|
-| l | A symbolic link. Notice that with symbolic links, the remaining file
-attributes are *always “rwxrwxrwx” and are dummy values*. The real file attributes are those of the file the symbolic link points to. |
+| l | A symbolic link. Notice that with symbolic links, the remaining file attributes are *always “rwxrwxrwx” and are dummy values*. The real file attributes are those of the file the symbolic link points to. |
 | c | A character special file. This file type refers to a device that handles data as a stream of bytes, such as a terminal or modem. |
 | b | A block special file. This file type refers to a device that handles data in blocks, such as a hard drive or CD-ROM drive. |
 
@@ -64,7 +63,7 @@ Permissions attributes:
  - symbolic representation.
 
 ---
-CS concept learning:
+**CS concepts**:
 
 **Octal (base 8)**, and its cousin, **hexadecimal (base 16)** are number systems often used to express numbers on computers.
 
