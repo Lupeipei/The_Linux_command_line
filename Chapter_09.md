@@ -144,3 +144,107 @@ In both Nautilus (GNOME) and Konqueror (KDE), right-clicking a file or directory
 #### Set Default Permissions
 
 The `umask` command controls the default permissions given to a file when it is created.
+
+check the value:
+```
+umask
+0022
+```
+
+setting:
+```
+umask 0002
+```
+
+**Everywhere a 1 appears in the binary value of the mask, an attribute is unset.**
+
+See some examples.
+for *umask 0002* :
+
+| original file mode | --- rw- rw- rw- |
+| ------------------ | --------------- |
+| mask | 000 000 000 010 |
+| result | --- rw- rw- r-- |
+
+for *umask 0022*:
+
+| original file mode | --- rw- rw- rw- |
+| ------------------ | --------------- |
+| mask | 000 000 010 010 |
+| result | --- rw- r-- r-- |
+
+**Note :**
+Most of the time we won't have to change the mask; the default provided by your distribution will be fine. In some high-security situations, however, we will want to control it.
+
+---
+When I used `umask` to set permissions, I have found it didn't work, both on Mac terminal and Ubuntu terminal.:-(
+---
+
+### Changing Identities
+- `su` command allows you to assume the identity of another user, and either start a new shell session with that user's IDs, or to issue a single command as that user.
+
+- `sudo` command allows an administrator to set up a configuration file called /etc/sudoers, and define specific commands that particular users are permitted to execute under an assumed identity.
+
+#### su – Run A Shell With Substitute User And Group IDs
+
+```
+su [-[l]] [user]
+```
+- If the “-l” option is included, the resulting shell session is a login shell for the specified user.
+
+
+To start a shell for the superuser:
+```
+su -
+```
+
+#### sudo – Execute A Command As Another User
+
+The difference between `su` and `sudo`:
+
+- administrator can configure `sudo` to allow an ordinary user to execute commands as a different user (usually the superuser) in a very controlled way. In particular, a user may be restricted to one or more specific commands and no others.
+
+- the use of `sudo` does not require access to the superuser's password. To authenticate using sudo, the user uses his/her own password.
+
+- `sudo` does not start a new shell, nor does it load another user's environment.
+
+---
+
+By default, Ubuntu disables logins to the root account (by failing to set a password for the ac- count), and instead uses `sudo` to grant superuser privileges.
+
+---
+
+#### chown – Change File Owner And Group
+
+- The `chown` command is used to change the owner and group owner of a file or directory.
+
+- Superuser privileges are required to use this command.
+
+```
+chown [owner][:[group]] file...
+```
+
+an example :
+```
+sudo cp myfile.txt ~tony
+sudo chown tony:~tony/myfile.txt
+```
+PS.I found it didn't work on my ubuntu terminal.
+
+**note :**
+`sudo`, in most configurations, “trusts” you for several minutes until its timer runs out.
+
+#### chgrp – Change Group Ownership
+
+
+In older versions of Unix, the `chown` command **only changed file ownership, not group ownership**. For that purpose, a separate command, `chgrp` was used.
+
+`chgrp` works much the same way as `chown`.
+
+### Changing Your Password
+```
+passwd
+```
+The passwd command will try to enforce use of “strong” passwords.
+
+you will find it tough to change your password. At least, I found it hard to find a strong passwords that I can remember:-|
