@@ -76,8 +76,7 @@ Non-login shell sessions read the following startup files:
 | File | Contents |
 | ---- | -------- |
 | /etc/bash.bashrc | A global configuration script that applies to all users. |
-| ~/.bashrc |A user's personal startup file. Can be used to extend or
-override settings in the global configuration script. |
+| ~/.bashrc |A user's personal startup file. Can be used to extend or override settings in the global configuration script. |
 
 
 The **~/.bashrc file** is probably the most important startup file from the ordinary user’s point of view, since it is almost always read.
