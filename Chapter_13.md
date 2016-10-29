@@ -9,6 +9,7 @@ echo $PS1
 ```
 
 Escape Codes Used In Shell Prompts :
+
 ![](images/13_1.png)
 
 \\\]=  : Signals the end of a non-printing character sequence.
